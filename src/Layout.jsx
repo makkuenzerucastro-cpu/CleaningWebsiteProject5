@@ -88,10 +88,12 @@ export default function Layout({ children, currentPageName }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center">
-                  <Sparkles className="w-4 h-4 text-white" />
-                </div>
-                <span className="font-bold text-lg text-gray-800">JES Cleaning</span>
+                <img
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a2841444c124984f79f705/f4d638eb5_Messenger_creation_30BDBC06-9D81-461F-9A36-91BECAC1431F.jpg"
+                  alt="JES Cleaning Services Logo"
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <span className="font-bold text-lg text-gray-800">JES Cleaning Services</span>
               </div>
               <p className="text-gray-600 text-sm">
                 Professional cleaning services for homes and offices. Making spaces sparkle since day one.
