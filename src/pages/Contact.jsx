@@ -67,7 +67,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">hello@jescleaning.com</p>
+                    <a href="mailto:jesree@jescleaningservices.ca" className="text-gray-600 hover:text-green-600 transition-colors block">jesree@jescleaningservices.ca</a>
+                    <a href="mailto:jesjaned@yahoo.com" className="text-gray-600 hover:text-green-600 transition-colors block">jesjaned@yahoo.com</a>
                   </div>
                 </div>
                 
@@ -77,7 +78,17 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">(555) 123-4567</p>
+                    <a href="tel:5879986717" className="text-gray-600 hover:text-green-600 transition-colors">587.998.6717</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Facebook className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Facebook</h3>
+                    <a href="https://www.facebook.com/share/185Ws7VpMp/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-green-600 transition-colors">JES Cleaning Services</a>
                   </div>
                 </div>
                 
@@ -90,6 +101,12 @@ export default function Contact() {
                     <p className="text-gray-600">Serving the greater metropolitan area</p>
                   </div>
                 </div>
+              </div>
+
+              <div className="mt-8 p-4 bg-green-50 rounded-2xl border border-green-100">
+                <p className="text-sm text-gray-700 font-medium">Jesree Jane Bourque</p>
+                <p className="text-sm text-gray-600">Owner / Lead Service Operator</p>
+                <p className="text-sm text-green-600 font-medium">Registered & Insured</p>
               </div>
             </div>
 
