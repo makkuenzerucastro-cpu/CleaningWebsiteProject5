@@ -112,8 +112,9 @@ export default function Layout({ children, currentPageName }) {
             <div>
               <h4 className="font-semibold text-gray-800 mb-4">Contact Info</h4>
               <div className="text-gray-600 text-sm space-y-2">
-                <p>Email: hello@jescleaning.com</p>
-                <p>Phone: (555) 123-4567</p>
+                <p>Email: jesree@jescleaningservices.ca</p>
+                <p>Phone: 587.998.6717</p>
+                <a href="https://www.facebook.com/share/185Ws7VpMp/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors block">Facebook: JES Cleaning Services</a>
               </div>
             </div>
           </div>
