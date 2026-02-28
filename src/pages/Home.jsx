@@ -22,18 +22,22 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-white to-sky-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-32">
+      <section className="relative overflow-hidden min-h-[85vh] flex items-center">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-24 w-full">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Sparkles className="w-4 h-4" />
-              Professional Cleaning Services
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
               Cleaning With Care,{" "}
-              <span className="text-green-500">Sparkling Everywhere!</span>
+              <span className="text-green-400">Sparkling Everywhere!</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
               We bring freshness and shine to your home and office. Experience the joy of spotless spaces with JES Cleaning Services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -43,18 +47,13 @@ export default function Home() {
                 </Button>
               </Link>
               <Link to={createPageUrl("Services")}>
-                <Button size="lg" variant="outline" className="border-green-500 text-green-600 hover:bg-green-50 px-8 py-6 text-lg rounded-full">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/20 px-8 py-6 text-lg rounded-full">
                   Our Services
                 </Button>
               </Link>
             </div>
           </div>
         </div>
-        
-        {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-200 rounded-full opacity-30 blur-2xl" />
-        <div className="absolute bottom-20 right-10 w-32 h-32 bg-green-200 rounded-full opacity-40 blur-3xl" />
-        <div className="absolute top-40 right-20 w-16 h-16 bg-sky-200 rounded-full opacity-30 blur-2xl" />
       </section>
 
       {/* Features Strip */}
