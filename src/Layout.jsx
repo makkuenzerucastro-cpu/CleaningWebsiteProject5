@@ -21,10 +21,12 @@ export default function Layout({ children, currentPageName }) {
           <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo */}
             <Link to={createPageUrl("Home")} className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-white" />
-              </div>
-              <span className="font-bold text-xl text-gray-800">JES Cleaning</span>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a2841444c124984f79f705/f4d638eb5_Messenger_creation_30BDBC06-9D81-461F-9A36-91BECAC1431F.jpg"
+                alt="JES Cleaning Services Logo"
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <span className="font-bold text-xl text-gray-800">JES Cleaning Services</span>
             </Link>
 
             {/* Desktop Nav */}
