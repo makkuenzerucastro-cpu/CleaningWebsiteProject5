@@ -16,15 +16,6 @@ export default function AdminGallery() {
     base44.entities.GalleryItem.list("-created_date").then(setItems);
   }, []);
 
-  if (user === null) return null;
-  if (user?.role !== "admin") {
-    return (
-      <div className="min-h-screen flex items-center justify-center text-gray-500">
-        <p>Access denied. Admins only.</p>
-      </div>
-    );
-  }
-
   const loadItems = async () => {
     const data = await base44.entities.GalleryItem.list("-created_date");
     setItems(data);
