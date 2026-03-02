@@ -47,7 +47,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link to={createPageUrl("Services")}>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/20 px-8 py-6 text-lg rounded-full">
+                <Button size="lg" variant="outline" className="border-white bg-white/20 text-white hover:bg-white/30 px-8 py-6 text-lg rounded-full">
                   Our Services
                 </Button>
               </Link>

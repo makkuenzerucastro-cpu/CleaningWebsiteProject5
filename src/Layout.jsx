@@ -10,6 +10,7 @@ export default function Layout({ children, currentPageName }) {
     { name: "Home", page: "Home" },
     { name: "About Us", page: "About" },
     { name: "Services", page: "Services" },
+    { name: "Our Work", page: "OurWork" },
     { name: "Contact", page: "Contact" },
   ];
 
@@ -35,6 +36,7 @@ export default function Layout({ children, currentPageName }) {
                 <Link
                   key={item.page}
                   to={createPageUrl(item.page)}
+                  onClick={() => window.scrollTo(0, 0)}
                   className={`text-sm font-medium transition-colors ${
                     currentPageName === item.page
                       ? "text-green-600"
@@ -64,7 +66,7 @@ export default function Layout({ children, currentPageName }) {
                 <Link
                   key={item.page}
                   to={createPageUrl(item.page)}
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => { setMobileMenuOpen(false); window.scrollTo(0, 0); }}
                   className={`py-3 text-base font-medium ${
                     currentPageName === item.page
                       ? "text-green-600"
@@ -106,6 +108,7 @@ export default function Layout({ children, currentPageName }) {
                   <Link
                     key={item.page}
                     to={createPageUrl(item.page)}
+                    onClick={() => window.scrollTo(0, 0)}
                     className="text-gray-600 text-sm hover:text-green-600 transition-colors"
                   >
                     {item.name}

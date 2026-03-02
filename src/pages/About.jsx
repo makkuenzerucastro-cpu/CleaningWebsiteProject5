@@ -48,7 +48,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Story Section */}
+      {/* Owner Story Section */}
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -57,28 +57,40 @@ export default function About() {
                 Our Story
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                Built on Passion for Clean Spaces
+                Meet Jesree Jane — Founder & Owner
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  JES Cleaning Services was founded with a simple mission: to provide exceptional cleaning services that make a real difference in people's lives.
+                  My name is Jesree Jane, and the journey of JES Cleaning Services began long before it officially became a business. In 2016, I started working with different cleaning companies across Calgary. Those years were my training ground. I learned every part of the job — the right techniques, the wrong techniques, the mistakes, the pressure, the timing, the customer service, and the pride that comes from transforming a space.
                 </p>
                 <p>
-                  We understand that a clean environment isn't just about appearances — it's about health, comfort, and peace of mind. That's why we approach every job with dedication and care.
+                  Working for others taught me what quality really means. I saw what clients appreciated, what they didn't, and what was missing in the industry. Every shift, every home, and every challenge shaped my standards: be honest, be consistent, and treat every space like it matters.
                 </p>
                 <p>
-                  Our team consists of trained professionals who share our commitment to excellence. We use eco-friendly products that are safe for your family, pets, and the environment.
+                  After years of hands‑on experience and building confidence in my skills, I knew it was time to create something of my own. In 2024, I finally took the big step and launched JES Cleaning Services — a business built from real experience, real growth, and real passion.
+                </p>
+                <p>
+                  What started as one woman learning the industry from the ground up has grown into a premium cleaning service trusted by families and businesses. Today, I lead a team that reflects the same values I carried from day one: quality, transparency, and genuine care for every client.
+                </p>
+                <p className="font-medium text-gray-700">
+                  From 2016 to today, this journey has been built with hard work, heart, and the belief that a clean, welcoming space can truly make life easier.
                 </p>
               </div>
             </div>
             <div className="order-1 md:order-2">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-green-100 via-sky-50 to-yellow-50 flex items-center justify-center relative overflow-hidden">
-                <div className="text-center z-10">
+                <div className="text-center z-10 px-8">
                   <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
                     <Sparkles className="w-16 h-16 text-green-500" />
                   </div>
-                  <p className="text-2xl font-bold text-gray-800">JES Cleaning</p>
-                  <p className="text-gray-600">Services</p>
+                  <p className="text-2xl font-bold text-gray-800">Jesree Jane Bourque</p>
+                  <p className="text-green-600 font-medium">Owner & Founder</p>
+                  <p className="text-gray-500 text-sm mt-2">JES Cleaning Services</p>
+                  <div className="mt-4 flex flex-col gap-1 text-sm text-gray-600">
+                    <span>🗓 In the industry since 2016</span>
+                    <span>🚀 Launched JES in 2024</span>
+                    <span>✅ Registered & Insured</span>
+                  </div>
                 </div>
                 <div className="absolute top-10 right-10 w-20 h-20 bg-yellow-200 rounded-full opacity-50" />
                 <div className="absolute bottom-10 left-10 w-24 h-24 bg-sky-200 rounded-full opacity-50" />
