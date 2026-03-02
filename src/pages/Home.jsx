@@ -41,12 +41,12 @@ export default function Home() {
               We bring freshness and shine to your home and office. Experience the joy of spotless spaces with JES Cleaning Services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to={createPageUrl("Contact")}>
+              <Link to={createPageUrl("Contact")} onClick={() => window.scrollTo(0, 0)}>
                 <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg rounded-full">
                   Get a Free Quote
                 </Button>
               </Link>
-              <Link to={createPageUrl("Services")}>
+              <Link to={createPageUrl("Services")} onClick={() => window.scrollTo(0, 0)}>
                 <Button size="lg" variant="outline" className="border-white bg-white/20 text-white hover:bg-white/30 px-8 py-6 text-lg rounded-full">
                   Our Services
                 </Button>
@@ -95,7 +95,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link to={createPageUrl("Services")}>
+            <Link to={createPageUrl("Services")} onClick={() => window.scrollTo(0, 0)}>
               <Button variant="outline" className="border-green-500 text-green-600 hover:bg-green-50 rounded-full px-6">
                 View All Services
               </Button>
@@ -125,7 +125,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <Link to={createPageUrl("About")}>
+              <Link to={createPageUrl("About")} onClick={() => window.scrollTo(0, 0)}>
                 <Button className="bg-green-500 hover:bg-green-600 text-white rounded-full px-6">
                   Learn More About Us
                 </Button>
@@ -157,7 +157,7 @@ export default function Home() {
           <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
             Contact us today to discuss your cleaning needs. We're here to help!
           </p>
-          <Link to={createPageUrl("Contact")}>
+          <Link to={createPageUrl("Contact")} onClick={() => window.scrollTo(0, 0)}>
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 px-8 py-6 text-lg rounded-full">
               Contact Us Today
             </Button>

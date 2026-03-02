@@ -137,7 +137,7 @@ export default function About() {
           <p className="text-green-100 text-lg mb-8">
             Experience the JES Cleaning difference. Contact us today!
           </p>
-          <Link to={createPageUrl("Contact")}>
+          <Link to={createPageUrl("Contact")} onClick={() => window.scrollTo(0, 0)}>
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 px-8 py-6 text-lg rounded-full">
               Get in Touch
             </Button>

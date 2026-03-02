@@ -33,22 +33,34 @@ export default function OurWork() {
             </div>
           ) : (
             <div className="space-y-16">
-              {items.map((item) => (
-                <div key={item.id}>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                  {item.description && <p className="text-gray-500 mb-4">{item.description}</p>}
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <p className="text-sm font-semibold text-red-500 uppercase tracking-wide mb-2">Before</p>
-                      <img src={item.before_image} alt="Before" className="w-full aspect-video object-cover rounded-2xl shadow" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-green-500 uppercase tracking-wide mb-2">After</p>
-                      <img src={item.after_image} alt="After" className="w-full aspect-video object-cover rounded-2xl shadow" />
+              {items.map((item) => {
+                const beforeImages = item.before_images?.length ? item.before_images : (item.before_image ? [item.before_image] : []);
+                const afterImages = item.after_images?.length ? item.after_images : (item.after_image ? [item.after_image] : []);
+                return (
+                  <div key={item.id}>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                    {item.description && <p className="text-gray-500 mb-4">{item.description}</p>}
+                    <div className="grid grid-cols-2 gap-6">
+                      <div>
+                        <p className="text-sm font-semibold text-red-500 uppercase tracking-wide mb-3">Before</p>
+                        <div className={`grid gap-2 ${beforeImages.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>
+                          {beforeImages.map((url, i) => (
+                            <img key={i} src={url} alt={`Before ${i + 1}`} className="w-full aspect-square object-cover rounded-2xl shadow" />
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-green-500 uppercase tracking-wide mb-3">After</p>
+                        <div className={`grid gap-2 ${afterImages.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>
+                          {afterImages.map((url, i) => (
+                            <img key={i} src={url} alt={`After ${i + 1}`} className="w-full aspect-square object-cover rounded-2xl shadow" />
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>

@@ -144,7 +144,7 @@ export default function Services() {
           <p className="text-green-100 text-lg mb-8">
             Contact us today for a free quote on any of our services.
           </p>
-          <Link to={createPageUrl("Contact")}>
+          <Link to={createPageUrl("Contact")} onClick={() => window.scrollTo(0, 0)}>
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 px-8 py-6 text-lg rounded-full">
               Request a Quote
             </Button>
