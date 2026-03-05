@@ -22,32 +22,35 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        {/* Background Image */}
+      <section className="relative overflow-hidden min-h-[50vh] md:min-h-[70vh] flex items-center">
+        {/* Background Image - on mobile show top portion, on desktop show full */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80')" }}
+          className="absolute inset-0 bg-cover bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a2841444c124984f79f705/bc0f989ff_generated_image.png')",
+            backgroundPosition: "center top"
+          }}
         />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/50" />
+        {/* Mobile overlay for readability */}
+        <div className="absolute inset-0 bg-white/60 sm:bg-white/20 md:bg-transparent" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-24 w-full">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-20 w-full">
+          <div className="max-w-lg text-center sm:text-left">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-5">
               Cleaning With Care,{" "}
-              <span className="text-green-400">Sparkling Everywhere!</span>
+              <span className="text-green-500">Sparkling Everywhere!</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-600 mb-8 max-w-md mx-auto sm:mx-0">
               We bring freshness and shine to your home and office. Experience the joy of spotless spaces with JES Cleaning Services.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
               <Link to={createPageUrl("Contact")} onClick={() => window.scrollTo(0, 0)}>
-                <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg rounded-full">
+                <Button size="lg" className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg rounded-full shadow-lg">
                   Get a Free Quote
                 </Button>
               </Link>
               <Link to={createPageUrl("Services")} onClick={() => window.scrollTo(0, 0)}>
-                <Button size="lg" variant="outline" className="border-white bg-white/20 text-white hover:bg-white/30 px-8 py-6 text-lg rounded-full">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-gray-400 text-gray-700 hover:bg-gray-100 px-8 py-6 text-lg rounded-full">
                   Our Services
                 </Button>
               </Link>
